@@ -2,6 +2,7 @@ from tkinter import *
 import tkinter.messagebox
 
 root = Tk()
+root.title("Simple Text Editor")
 charList = []
 letterList = []
 digitList = []
@@ -50,17 +51,17 @@ textBox.bind("<KeyRelease>", countChars)
 
 entryChars = Entry(root, width=20, textvariable=ch)
 entryChars.grid(row=1, column=0)
-entryChars.insert(10, "Znaków: 0")
+entryChars.insert(10, "Characters: 0")
 entryChars.config(state='readonly')
 
 entryLetters = Entry(root, width=20, textvariable=lt)
 entryLetters.grid(row=1, column=1)
-entryLetters.insert(10, "Liter: 0")
+entryLetters.insert(10, "Letters: 0")
 entryLetters.config(state='readonly')
 
 entryDigits = Entry(root, width=20, textvariable=dg)
 entryDigits.grid(row=1, column=2)
-entryDigits.insert(10, "Cyfr: 0")
+entryDigits.insert(10, "Digits: 0")
 entryDigits.config(state='readonly')
 
 
